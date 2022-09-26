@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "9f46754a-7ed8-4f67-bc7e-df325f61e067",
+		"name": "pizzeria",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1344176"
+	},
+	"item": [
+		{
+			"name": "save toppings",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n    [\n        \"pineapple\",\n        \"cheese\"\n    \n    \n    ]\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/toppings/user1@qwe.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"toppings",
+						"user1@qwe.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get statistics",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/toppings/statistics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"toppings",
+						"statistics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get for user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/toppings/user@qwe.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"toppings",
+						"user@qwe.com"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
